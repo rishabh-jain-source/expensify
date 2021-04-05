@@ -38,4 +38,4 @@ const filtersReducerDefaultState = {
         return state;
     }
   };
-export default filtersReducer;
+export default filtersReducer

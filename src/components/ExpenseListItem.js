@@ -5,13 +5,13 @@ import { removeExpense } from '../actions/expenses'
 import EditExpense from './EditExpense'
 import {Route} from 'react-router-dom'
 
-const ExpenseListItem = ({ id,dispatch,description, amount, createdAt }) => (
+export const ExpenseListItem = ({ id,dispatch,description, amount, createdAt }) => (
     <div>
         <Link to={`/EditExpense/${id}`}>{description}</Link>
         <p>{amount}-{createdAt}</p>
-        <button onClick={() => {
+        {/* <button onClick={() => {
             dispatch(removeExpense({id}))
-        }}>Remove</button>
+        }}>Remove</button> */}
     </div>
 )
 

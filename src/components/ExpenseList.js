@@ -2,7 +2,7 @@ import React from 'react'
 import { connect } from 'react-redux'
 import ConnectedExpenseListItem from './ExpenseListItem';
 import getVisibleExpenses from '../selectors/getVisible'
-const ExpenseList = (props) => (
+export const ExpenseList = (props) => (
     <div>
         <h1>
             Expense List
